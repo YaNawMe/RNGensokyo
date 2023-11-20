@@ -5,3 +5,33 @@ margin: 0;
 background-repeat: no-repeat;
 background-attachment: fixed;
 }
+
+.logo{
+    width: 40em;
+}
+
+.img1{
+    width: 12em;
+    padding: 0.5em;
+    border-radius: 50%;
+    
+    
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes example {
+  0%   {transform: rotate(0deg);background-color: white;}
+  25%  {transform: rotate(15deg);background-color: yellow;border: 1px solid rgb(117, 117, 52);}
+  50%  {transform: rotate(0deg);background-color: white;}
+  75%  {transform: rotate(-15deg);background-color: yellow;border: 1px solid rgb(117, 117, 52);}
+  100% {transform: rotate(0deg);background-color: white;}
+}
+
+.titleMessage{
+    color: gray; 
+    font-family: 'Vina Sans', sans-serif;
+    font-size: 4em;
+}
