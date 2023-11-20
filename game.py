@@ -70,8 +70,8 @@ class Users(Resource):
         try:
             parser = reqparse.RequestParser()
 
-            parser.add_argument('Username', required=True)
-            parser.add_argument('Password', required=True)
+            parser.add_argument('Username', required=True, location="args")
+            parser.add_argument('Password', required=True, location="args")
 
             args = parser.parse_args()
 
