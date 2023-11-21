@@ -1,3 +1,4 @@
+import tkinter
 import os
 
 files = os.listdir("img")
@@ -38,3 +39,10 @@ default_stats = {
 char_data = {files[i]: default_stats for i in range(len(files))}
 
 [print(key, value) for key, value in char_data.items()]
+
+class GameEditor:
+    def __init__(self):
+        pass
+
+if __name__ == '__main__':
+    GameEditor()
