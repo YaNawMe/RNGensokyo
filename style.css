@@ -1,73 +1,66 @@
 body{
- background-image: linear-gradient(rgb(162, 212, 255), rgb(73, 101, 158) , rgb(17, 44, 98), rgb(0, 0, 0));
- height: 100%;
-margin: 0;
-background-repeat: no-repeat;
-background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    background-color:rgb(55, 55, 55);
 }
 
 .logo{
-    width: 40em;
-}
-
-.img1{
     width: 12em;
-    padding: 0.5em;
+}
+
+.logo_name{
+    margin-top: 2.5em;
+    margin-left: -6em;
+    width: 15em;
+}
+
+.list-group-flush > .list-group-item {
+border-width: thin;
+}
+
+.list-group-item {
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+}
+
+.list-group-item:first-child {
+border-top-right-radius: 2px;
+}
+
+
+.menuButtons{
+    border: 2px solid black;
+    padding: 1em;
+    
+}
+
+.menuButtons:hover{
+    border: 3px solid blue;
+    animation-name: smoothHover;
+    animation-duration: 1s;
+}
+
+.sidebar{
+    height: 40em;
+}
+
+.pfp{
+    width: 3em;
     border-radius: 50%;
-    
-    
-    animation-name: example;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
+    margin-top: 2.5em;
+    border: 2px solid black;
 }
 
-.running_nigga{
-    position: absolute;
-    animation-name: movingNigga;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
+
+@keyframes smoothHover {
+    0%{
+        margin-right: 2em;
+    }
+    50%{
+        margin-right: 0.8em;
+    }
+    100%{
+        margin-right: 0.3em;
+    }
 }
 
-.real_anim{
-    position: absolute;
-    animation-name: MoveThink;
-    animation-duration: 11s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-}
-
-@keyframes MoveThink {
-    0% {transform: translateX(-100px); animation-duration: 3s;}
-    35% {transform: scaleX(-1); animation-duration: 100ms;}
-    36% {transform: translateX(100px); animation-duration: 3s;}
-    53% {transform: scaleX(1); animation-duration: 100ms;}
-    54% {transform: translateX(-10px); animation-duration: 1s;}
-    71% {transform: scaleX(-1); animation-duration: 100ms;}
-    72% {transform: translateX(10px); animation-duration: 1s;}
-    99% {transform: scaleX(1); animation-duration: 100ms;}
-    100% {transform: translateX(-100px); animation-duration: 3s;}
-}
-@keyframes movingNigga {
-    0%   {transform: rotate(0deg); left: 0px; transform: scaleX(-1);}
-    25%  {transform: rotate(15deg); left: 1000px; transform: scaleX(-1);}
-    50%  {transform: rotate(0deg); left: 500px;}
-    75%  {transform: rotate(-15deg); left: 800px;}
-    90%  {transform: rotate(-15deg); left: 100px;}
-    100% {transform: rotate(0deg); left: 0px;}
-}
-
-@keyframes example {
-  0%   {transform: rotate(0deg);background-color: white;}
-  25%  {transform: rotate(15deg);background-color: yellow;border: 1px solid rgb(117, 117, 52);}
-  50%  {transform: rotate(0deg);background-color: white;}
-  75%  {transform: rotate(-15deg);background-color: yellow;border: 1px solid rgb(117, 117, 52);}
-  100% {transform: rotate(0deg);background-color: white;}
-}
-
-.titleMessage{
-    color: gray; 
-    font-family: 'Vina Sans', sans-serif;
-    font-size: 4em;
-}
