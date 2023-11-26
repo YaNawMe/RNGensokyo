@@ -32,7 +32,7 @@ default_stats = {
         "armor": ...,
         "boots": ...,
         "hands": ...,
-        "accessories": [],
+        "accessories": []
     }
 }
 
