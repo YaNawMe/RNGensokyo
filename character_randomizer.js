@@ -9,11 +9,34 @@ const images_list = [
     "cirno.png",
     "daiyousei.png",
     "eiki.png",
-    "eirin.png"     
+    "eirin.png",
+    "flandre.png",
+    "hieda.png",
+    "hina.png",
+    "hong.png",
+    "ichirin.png",
+    "iku.png",
+    "kaguya.png",
+    "kanako.png",
+    "keine.png",
+    "keineyoukai.png",
+    "kisume.png",
+    "koakuma.png",
+    "kogasa.png",
+    "koishi.png",
+    "komachi.png",
+    "letty.png",
+
 ]
 
-for (var i in img_holders){
-    var random = Math.floor(Math.random() * 7);
-    img_holders[i].src = "./img/"+images_list[random]
+function loadRateUP(){
+    console.log(img_holders.length)
+    for (var i = 0; i!=img_holders.length;i++){
+        
+        var random = Math.floor(Math.random() * images_list.length);
+        img_holders[i].src = "./image/characters/"+images_list[random]
+    }
 }
+
+export default loadRateUP
 
