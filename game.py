@@ -8,7 +8,6 @@ api = Api(app)
 
 class SQL():
     connection = sqlite3.connect('UserDatabase.db', check_same_thread=False)
-    cursor = connection.cursor()
 
     @classmethod
     def get_data(cls) -> list[tuple]:
@@ -45,27 +44,7 @@ class SQL():
                 cls.connection.execute(sql_command, {"id": id})
                 cls.connection.commit()
         
-class Users(Resource):
-    def get(self):
-        return {"data": SQL.get_data()}, 200
-
-    def patch(self):
-        try:
-            parser = reqparse.RequestParser()
-
-            parser.add_argument('ID', required=True)
-            parser.add_argument('Username', required=True)
-            parser.add_argument('Password', required=True)
-            
-            args = parser.parse_args()
-            
-            SQL.replace_data(args["ID"], args["Username"], args["Password"])
-
-            return {"message": "Updated info!"}, 200
-
-        except Exception as ex:
-            return {"error": ex}, 500
-
+class Login(Resource):
     def post(self):
         try:
             parser = reqparse.RequestParser()
@@ -82,8 +61,7 @@ class Users(Resource):
         except Exception as ex:
             return {"error": ex}, 500
         
-api.add_resource(Users, "/users")
+api.add_resource(Login, "/login")
 
 if __name__ == '__main__':
-    SQL.get_data()
     app.run()
