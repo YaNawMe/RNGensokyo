@@ -34,7 +34,7 @@ function loadRateUP(){
     for (var i = 0; i!=img_holders.length;i++){
         
         var random = Math.floor(Math.random() * images_list.length);
-        img_holders[i].src = "./image/characters/"+images_list[random]
+        img_holders[i].src = "./image/base/characters/"+images_list[random]
     }
 }
 

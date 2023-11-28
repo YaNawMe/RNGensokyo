@@ -45,7 +45,7 @@ function renderCharacters(){
                 
               <div class="row">
                 <div class="col-2">
-                  <img src="./image/characters/alice.png" alt="" srcset="">
+                  <img src="./image/base/characters/alice.png" alt="" srcset="">
                 </div>
                 <div class="col-10">
                   <div><h3>Alice</h3></div>
@@ -60,7 +60,7 @@ function renderCharacters(){
               <hr>
               <div class="row">
                 <div class="col-2">
-                  <img src="./image/characters/alice.png" alt="" srcset="">
+                  <img src="./image/base/characters/alice.png" alt="" srcset="">
                 </div>
                 <div class="col-10">
                   <div><h3>Alice</h3></div>
