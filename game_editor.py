@@ -1,10 +1,6 @@
 import tkinter as tk
 import os
 
-
-
-
-
 class GameEditor:
     def __init__(self):
         # Initialize
@@ -45,6 +41,7 @@ class GameEditor:
                 "defense": 0
             }
         }
+
         self.default_stats = {
             "health": 0,
             "attack": 0,
