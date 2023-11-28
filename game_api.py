@@ -18,12 +18,6 @@ class Login(Resource):
 
             args = parser.parse_args()
 
-            if len(args["user"]) > 32:
-                return {"message": "Username cannot be more than 32 characters."}, 400
-            
-            elif len(args["pass"]) > 32:
-                return {"message": "Password cannot be more than 32 characters."}, 400
-
             database = SQLLogin.get_data()
 
             for data in database:
@@ -44,6 +38,12 @@ class Register(Resource):
             parser.add_argument('pass', required=True, location="args")
 
             args = parser.parse_args()
+
+            if len(args["user"]) > 32:
+                return {"message": "Username cannot be more than 32 characters."}, 400
+            
+            elif len(args["pass"]) > 32:
+                return {"message": "Password cannot be more than 32 characters."}, 400
 
             SQLLogin.insert_data(args["Username"], args["Password"])
 
