@@ -45,7 +45,7 @@ class Register(Resource):
 
             args = parser.parse_args()
 
-            SQLLogin.insert_data(args["Username"], args["Password"])
+            SQLLogin.insert_data(args["user"], args["pass"])
 
             return {"message": "Registered successfully!"}, 200
         
@@ -57,4 +57,4 @@ api.add_resource(Register, "/register")
 api.add_resource(Login, "/login")
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)

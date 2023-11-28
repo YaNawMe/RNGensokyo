@@ -82,3 +82,6 @@ class SQLUserData:
     @classmethod
     def delete_data(cls, table, *ids, **kwargs):
         SQLBase.delete_data(table, *ids, **kwargs)
+        
+        
+print(SQLBase.connection.execute("SELECT * FROM UserLogin").fetchall())
