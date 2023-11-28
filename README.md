@@ -1,30 +1,30 @@
 # RNGensokyo
-### Play the game [here][gamelink]
+### Play the game [here][gamelink]!
 
 ---
 
 This is a gacha idle game featuring your favorite Touhou characters like:
 
-![Reimu](image/characters/reimu.png)
-![Marisa](image/characters/marisa.png)
-![Sakuya](/image/characters/sakuya.png)
-![Pachouli](/image/characters/pachouli.png)
+![Reimu](image/base/characters/reimu.png)
+![Marisa](image/base/characters/marisa.png)
+![Sakuya](image/base/characters/sakuya.png)
+![Pachouli](image/base/characters/pachouli.png)
 
 ... and many more! You can also customize their Equipments:
 
-> Pretend there's an image here displaying equipments
+    > Pretend there's an image here displaying equipments
 
 and combine it for higher stats!
 
-> Pretend there's an image showing combined items
+    > Pretend there's an image showing combined items
 
 There's even hourly/daily/weekly/monthly/yearly rewards for you to collect!
 
-> Pretend there's oh come on you get the point
+    > Pretend there's oh come on you get the point
 
 And the features don't end here...
 
-> Insert bunch of other features we just spoiled, generic I know
+    > Insert bunch of other features we just spoiled, generic I know
 
 So what are you waiting for? [Play now][gamelink]!
 
