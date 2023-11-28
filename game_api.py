@@ -27,7 +27,7 @@ class Login(Resource):
             return {"message": "Username or Password is incorrect."}, 400
 
         except Exception as ex:
-            return {"error": ex}, 500
+            return {"error": str(ex)}, 500
 
 class Register(Resource):
     def post(self):
@@ -45,12 +45,12 @@ class Register(Resource):
             elif len(args["pass"]) > 32:
                 return {"message": "Password cannot be more than 32 characters."}, 400
 
-            SQLLogin.insert_data(args["Username"], args["Password"])
+            SQLLogin.insert_data(args["user"], args["pass"])
 
             return {"message": "Registered successfully!"}, 200
         
         except Exception as ex:
-            return {"error": ex}, 500
+            return {"error": str(ex)}, 500
 
 
 api.add_resource(Register, "/register")
